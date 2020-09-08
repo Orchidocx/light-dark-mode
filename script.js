@@ -21,7 +21,7 @@ function toggleMode(color) {
   toggleIcon.children[0].textContent = (isLight) ? 'Light Mode' : 'Dark Mode';
   (isLight) ?
     toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun') :
-    toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon')
+    toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
   imageMode(color);
   (isLight) ? toggleSwitch.checked=false : toggleSwitch.checked=true;
   localStorage.setItem('theme', color);
